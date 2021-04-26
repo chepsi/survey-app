@@ -3,7 +3,6 @@ package com.chepsi.survey.app
 import android.app.Application
 import com.chepsi.survey.app.domain.di.myKoinModules
 import org.koin.android.ext.koin.androidContext
-import org.koin.androidx.workmanager.koin.workManagerFactory
 import org.koin.core.context.startKoin
 import timber.log.Timber
 

@@ -17,8 +17,8 @@ import org.koin.core.component.inject
 import timber.log.Timber
 
 class SubmitSurveyWorker(
-    private val context: Context,
-    private val workerParameters: WorkerParameters
+    context: Context,
+    workerParameters: WorkerParameters
 ): CoroutineWorker(context, workerParameters), KoinComponent {
     private val notificationManager =
         context.getSystemService(Context.NOTIFICATION_SERVICE) as

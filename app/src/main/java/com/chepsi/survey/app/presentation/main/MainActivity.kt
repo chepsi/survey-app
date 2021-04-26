@@ -68,7 +68,6 @@ class MainActivity : AppCompatActivity(R.layout.activity_main) {
         val imageWorker = PeriodicWorkRequestBuilder<SubmitSurveyWorker>(15, TimeUnit.MINUTES)
             .setConstraints(constraints)
             .addTag("submitSurveyWork")
-            //.setInputData(workDataOf("survey" to answeredSurveys.toString()))
             .setInputData(workDataOf("survey" to Gson().toJson(answeredSurveys)))
             .build()
         workManager.enqueueUniquePeriodicWork(
